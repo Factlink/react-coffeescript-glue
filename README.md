@@ -1,6 +1,6 @@
 # react-coffeescript-glue
 
-Write nice-looking React components in Coffeescript.
+Write pretty React components in Coffeescript.
 
 This is what your render function could look like in Coffeescript, using this repo:
 
