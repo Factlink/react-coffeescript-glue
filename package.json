@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "prepublish": "coffee -sc < react-coffeescript-glue.coffee | umd react-coffeescript-glue > react-coffeescript-glue.js"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "umd": "*"
+  }
+}
