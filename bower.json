@@ -1,6 +1,6 @@
 {
   "name": "react-coffeescript-glue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/Factlink/react-coffeescript-glue",
   "description": "Write pretty React components in Coffeescript.",
   "main": "react-coffeescript-glue.js",
