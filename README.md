@@ -4,7 +4,7 @@ Write pretty React components in Coffeescript.
 
 This is what your render function could look like in Coffeescript, using this repo:
 
-```
+```coffeescript
 render: ->
   _div ['some-button-container'],
     _button [
@@ -36,7 +36,7 @@ bower install --save react-coffeescript-glue
 
 Then include in your HTML:
 
-```
+```html
 <script src="bower_components/react-coffeescript-glue/react-coffeescript-glue.js"></script>
 ```
 
