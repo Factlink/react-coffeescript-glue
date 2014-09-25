@@ -21,6 +21,19 @@
   }
 
   var _bundleExports = (function() {
+  
+if (typeof define !== 'function' && typeof window !== 'object' ||
+    typeof window.define !== 'function') {
+  var define = require('amdefine')(module);
+} else if (typeof window.define === 'function' && typeof define !== 'function') {
+  define = window.define;
+}
+
+if (typeof window !== 'object') {
+  var window = GLOBAL;
+}
+
+;
   var define_tag, method, tag, _ref,
     __slice = [].slice;
 
