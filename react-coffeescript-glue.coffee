@@ -1,3 +1,10 @@
+`
+if (typeof window !== 'object') {
+  var window = GLOBAL;
+}
+
+`
+
 define_tag = (tag) ->
   return unless {}.hasOwnProperty.call(React.DOM, tag) && tag != 'injection'
 

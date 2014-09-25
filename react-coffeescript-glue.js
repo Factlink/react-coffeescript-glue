@@ -21,6 +21,12 @@
   }
 
   var _bundleExports = (function() {
+  
+if (typeof window !== 'object') {
+  var window = GLOBAL;
+}
+
+;
   var define_tag, method, tag, _ref,
     __slice = [].slice;
 
