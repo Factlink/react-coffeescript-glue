@@ -1,7 +1,9 @@
+ReactGlue = {}
+
 define_tag = (tag) ->
   return unless {}.hasOwnProperty.call(React.DOM, tag) && tag != 'injection'
 
-  window['_' + tag] = (attrs, children...) ->
+  ReactGlue[tag] = (attrs, children...) ->
     if Array.isArray(attrs)
       options = { className: '' }
       for attr in attrs
@@ -16,3 +18,5 @@ define_tag = (tag) ->
 
 
 define_tag tag for tag, method of React.DOM
+
+return ReactGlue

@@ -6,7 +6,7 @@
     define(['react'], factory);
   }
   else {
-    var globalAlias = 'ReactCoffeescriptGlue';
+    var globalAlias = 'ReactGlue';
     var namespace = globalAlias.split('.');
     var parent = root;
     for ( var i = 0; i < namespace.length-1; i++ ) {
@@ -21,14 +21,16 @@
   }
 
   var _bundleExports = (function() {
-  var define_tag, method, tag, _ref,
+  var ReactGlue, define_tag, method, tag, _ref,
     __slice = [].slice;
+
+  ReactGlue = {};
 
   define_tag = function(tag) {
     if (!({}.hasOwnProperty.call(React.DOM, tag) && tag !== 'injection')) {
       return;
     }
-    return window['_' + tag] = function() {
+    return ReactGlue[tag] = function() {
       var attr, attrs, children, key, options, value, _i, _len, _ref, _ref1;
       attrs = arguments[0], children = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
       if (Array.isArray(attrs)) {
@@ -58,6 +60,8 @@
     method = _ref[tag];
     define_tag(tag);
   }
+
+  return ReactGlue;
 
 }).call(this);
 
