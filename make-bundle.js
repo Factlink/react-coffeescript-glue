@@ -2,7 +2,7 @@ var code = require('coffee-script').compile(require('fs').readFileSync('react-co
 
 var options = {
   code: code,
-  exports: 'ReactCoffeescriptGlue',
+  exports: 'ReactGlue',
   dependencies: [{name: 'react', exports: 'React'},]
 };
 
